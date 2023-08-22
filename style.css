@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: #444444;
+  color: inherit;
   text-decoration: none;
 }
 

@@ -13,9 +13,13 @@ body {
 
 #container {
   display: grid;
-  grid-template: repeat(3, min-content)/100%;
+  grid-template: repeat(4, min-content)/100%;
   margin: 1rem;
   gap: 0.5rem;
+}
+
+h1 {
+  font-weight: 400;
 }
 
 a {
@@ -36,9 +40,16 @@ a:hover {
 }
 
 .img {
-  background: yellow;
-  border: 1px solid red;
-  aspect-ratio: 5/4;
+  margin: 5rem auto;
+}
+.img img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  max-width: 900px;
+}
+
+p.copytext {
+  font-size: 0.75rem;
+  text-transform: lowercase;
 }

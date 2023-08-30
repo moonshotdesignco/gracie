@@ -10,10 +10,21 @@
 <body>
   <div id="container">
     <p><a href="/"><img src="/logo_brown.png" alt="Gracie Bone" id="logo"></a></p>
-    <p><a href="/" class="menu">Home</a> <a href="/gallery/" class="menu">Gallery</a> <a href="/about/" class="menu">About Me</a> <a href="/contact/" class="menu hilite">Contact</a></p>
-    <div id="contactform">
-      <p><i class="fab fa-fw fa-instagram"></i> : <a href="https://instagram.com/bonegracie">@bonegracie</a></p>
-      <p><i class="far fa-fw fa-envelope"></i> : <a href="mailto:gmaebone01@gmail.com">gmaebone01@gmail.com</a></p>
+    <p class="menu"><a href="/gallery/">Gallery</a> <a href="/about/">About&nbsp;Me</a> <a href="/contact/" class="hilite">Contact</a></p>
+    <div id="contactlinks">
+      <p><a href="https://instagram.com/bonegracie">instagram: @bonegracie</a></p>
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xqkvqrnw" method="post">
+        <fieldset id="fs-frm-inputs" control-id="ControlID-1">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="your name" autocomplete="name" required="" control-id="ControlID-2">
+          <label for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@address.com" autocomplete="email" required="" control-id="ControlID-3">
+          <label for="message">Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="let's work together!" required="" control-id="ControlID-4"></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" control-id="ControlID-5">
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" control-id="ControlID-6">
+      </form>
     </div>
     <p class="copytext">Copyright &copy; 2023 Gracie Bone & <a href="https://moonshotdesignco.com">Moonshot Design Co.</a></p>
   </div>

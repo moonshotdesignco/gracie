@@ -28,16 +28,29 @@ a {
   text-decoration: none;
   transition: filter 700ms;
 }
-a.menu {
+a:hover {
+  filter: hue-rotate(-90deg);
+}
+
+.menu {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+.menu a {
+  display: inline-block;
+  width: -moz-min-content;
+  width: min-content;
   padding: 4px 8px;
   border-radius: 8px;
   border: 2px solid #d05010;
 }
-a.menu.hilite {
-  background-color: #d0a090;
-}
-a:hover {
-  filter: hue-rotate(-90deg);
+.menu a.hilite {
+  color: #90d0b0;
+  background-color: #d05010;
 }
 
 #logo {
@@ -91,16 +104,62 @@ a:hover {
 }
 
 #biotext,
-#contactform {
+#contactlinks {
   display: grid;
-  gap: 1rem;
   margin: 5rem auto;
+  text-align: left;
+  width: 100%;
   max-width: 750px;
 }
-#biotext p,
-#contactform p {
-  text-align: left;
+
+#biotext {
+  gap: 1rem;
+}
+#biotext p {
   text-transform: none;
+}
+
+#contactlinks {
+  gap: 5rem;
+}
+#contactlinks p {
+  text-align: center;
+}
+
+form#fs-frm {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+}
+form#fs-frm fieldset {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin: 0;
+  border-radius: 8px;
+  border: 2px solid #d05010;
+}
+form#fs-frm fieldset input,
+form#fs-frm fieldset textarea {
+  border-radius: 8px;
+  border: unset;
+  padding: 0.5rem;
+}
+form#fs-frm #submit {
+  display: block;
+  margin: auto;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 2px solid #d05010;
+  background-color: #d05010;
+  color: #90d0b0;
+  font-weight: bold;
+  text-transform: lowercase;
+  font-size: unset;
 }
 
 p.copytext {

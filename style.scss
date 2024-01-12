@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #90d0b0;
+  background: #d0a0d0;
   color: #d05010;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 600;
@@ -54,7 +54,7 @@ a {
     border-radius: 8px;
     border: 2px solid #d05010;
     &.hilite {
-      color: #90d0b0;
+      color: #d0a0d0;
       background-color: #d05010;
     }
   }
@@ -76,12 +76,12 @@ a {
   gap: 0.5rem;
   padding: 5rem 0;
   grid-template-columns: 1fr;
-  @media (min-width: 600px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media (min-width: 900px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+  // @media (min-width: 600px) {
+  //   grid-template-columns: 1fr 1fr;
+  // }
+  // @media (min-width: 900px) {
+  //   grid-template-columns: 1fr 1fr 1fr 1fr;
+  // }
   grid-template-rows: min-content;
 }
 

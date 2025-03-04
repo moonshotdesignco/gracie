@@ -9,8 +9,8 @@
 }
 
 body {
-  background: #d0a0d0;
-  color: #d05010;
+  background: #dbb47f;
+  color: #C30055;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-transform: lowercase;
@@ -36,26 +36,30 @@ a {
           transition: filter 700ms;
           transition: filter 700ms, -webkit-filter 700ms;
   &:hover {
-    -webkit-filter: hue-rotate(-90deg);
-            filter: hue-rotate(-90deg);
+    -webkit-filter: hue-rotate(-70deg);
+            filter: hue-rotate(-70deg);
   }  
 }
 
 .menu {
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   width: min-content;
   margin: auto;
   a {
+    font-size: 0.8em;
+    @media (min-width: 700px) {
+      font-size: unset;
+    }
     display: inline-block;
     width: min-content;
-    padding: 4px 8px;
-    border-radius: 8px;
-    border: 2px solid #d05010;
+    padding: 6px 12px;
+    border-radius: 16px;
+    border: 2px solid #C30055;
     &.hilite {
-      color: #d0a0d0;
-      background-color: #d05010;
+      color: #dbb47f;
+      background-color: #C30055;
     }
   }
 }
@@ -141,7 +145,7 @@ form#fs-frm {
     padding: 0.5rem;
     margin: 0;
     border-radius: 8px;
-    border: 2px solid #d05010;
+    border: 2px solid #C30055;
     input,
     textarea {
       border-radius: 8px;
@@ -155,9 +159,9 @@ form#fs-frm {
     width: min-content;
     padding: 4px 8px;
     border-radius: 8px;
-    border: 2px solid #d05010;
-    background-color: #d05010;
-    color: #90d0b0;
+    border: 2px solid #C30055;
+    background-color: #C30055;
+    color: #dbb47f;
     font-weight: bold;
     text-transform: lowercase;
     font-size: unset;
